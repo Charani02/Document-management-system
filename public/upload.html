@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h2>📁 Charani DMS</h2>
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="documents.html">Documents</a>
+        <a href="categories.html">Categories</a>
+    </nav>
+</header>
+
+<div class="form-container">
+    <h2>Upload Document</h2>
+
+    <form id="uploadForm">
+        <input type="text" name="title" placeholder="Document Title" required>
+
+        <select name="category_id" id="category" required>
+            <option value="">Select Category</option>
+        </select>
+
+        <input type="file" name="document" required>
+
+        <button type="submit" class="btn">Upload Document</button>
+    </form>
+
+    <p id="message"></p>
+</div>
+
+<script src="js/upload.js"></script>
+
+</body>
+</html>

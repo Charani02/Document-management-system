@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Charani DMS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h2>📁 Charani DMS</h2>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="upload.html">Upload</a>
+        <a href="documents.html">Documents</a>
+        <a href="categories.html">Categories</a>
+        <a href="access.html">Share</a>
+        <button onclick="logout()">Logout</button>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="welcome-section">
+    <div>
+        <span class="welcome-label">YOUR PERSONAL WORKSPACE ✨</span>
+
+        <h1>Welcome back, <span id="userName">User</span> 👋</h1>
+
+        <p>Your documents, beautifully organized in one place.</p>
+    </div>
+
+    <a href="upload.html" class="btn">＋ Upload Document</a>
+</div>
+
+    <div class="dashboard-cards">
+        <div class="feature-card">
+            <h3>📤 Upload Document</h3>
+            <p>Upload a new document.</p>
+            <a href="upload.html" class="btn">Upload</a>
+        </div>
+
+        <div class="feature-card">
+            <h3>📁 My Documents</h3>
+            <p>View and download documents.</p>
+            <a href="documents.html" class="btn">View Documents</a>
+        </div>
+
+        <div class="feature-card">
+            <h3>📂 Categories</h3>
+            <p>Browse document categories.</p>
+            <a href="categories.html" class="btn">View Categories</a>
+        </div>
+
+        <div class="feature-card">
+            <h3>🔐 Document Sharing</h3>
+            <p>Manage access to your documents.</p>
+            <a href="access.html" class="btn">Manage Access</a>
+        </div>
+    </div>
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

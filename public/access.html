@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Access</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h2>📁 Charani DMS</h2>
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="documents.html">Documents</a>
+    </nav>
+</header>
+
+<div class="form-container">
+    <h2>Manage Document Access</h2>
+
+    <form id="accessForm">
+        <input type="number" id="documentId"
+            placeholder="Document ID" required>
+
+        <input type="email" id="email"
+            placeholder="Registered User Email" required>
+
+        <select id="permission" required>
+            <option value="View">View</option>
+            <option value="Download">Download</option>
+            <option value="Edit">Edit</option>
+        </select>
+
+        <button type="submit" class="btn">Grant Access</button>
+    </form>
+
+    <p id="message"></p>
+
+    <h3>Shared Users</h3>
+    <div id="accessList"></div>
+</div>
+
+<script src="js/access.js"></script>
+
+</body>
+</html>
